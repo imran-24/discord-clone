@@ -38,8 +38,8 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
             rounded-r-full
             dark:bg-zinc-200
             `,
-            params.serverId !== id && "group-hover:h-[28px]",
-            params.serverId === id ? "h-[36px]" : "h-[8px]")}
+            params?.serverId !== id && "group-hover:h-[28px]",
+            params?.serverId === id ? "h-[36px]" : "h-[8px]")}
 
         />
         <div
@@ -52,7 +52,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
             mx-3
             group-hover:rounded-[16px] 
             overflow-hidden`,
-            params.serverId === id && "rounded-[16px] ")}
+            params?.serverId === id && "rounded-[16px] ")}
 
         >
           <Image
